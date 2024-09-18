@@ -127,10 +127,12 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Battery.h" />
     <ClCompile Include="Computer.h" />
     <ClCompile Include="ConsoleApplication6.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="GPU.h" />
     <ClInclude Include="KeyBoard.h" />
     <ClInclude Include="Monitor.h" />
     <ClInclude Include="SSD.h" />
