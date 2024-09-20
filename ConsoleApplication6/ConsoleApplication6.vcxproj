@@ -135,7 +135,9 @@
     <ClInclude Include="GPU.h" />
     <ClInclude Include="KeyBoard.h" />
     <ClInclude Include="Monitor.h" />
+    <ClInclude Include="OS.h" />
     <ClInclude Include="SSD.h" />
+    <ClInclude Include="WIFI.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -4,6 +4,8 @@
 #include "KeyBoard.h"
 #include "GPU.h"
 #include "Battery.h"
+#include "OS.h"
+#include "WIFI.h"
 
 class Computer
 {
@@ -13,6 +15,8 @@ private:
 	Display display;
     GPU gpu;
     Battery battery;
+    OS os;
+    WIFI wifi;
 public:
 
     void run() {
@@ -20,12 +24,28 @@ public:
 
         gpu.Success();
 
-        std::string userInput = keyboard.input();
+        if (os.login() == true) {
 
-        ssd.storeData(userInput);
+            std::string userInput = keyboard.input();
 
-        display.show(ssd.getData());
+            ssd.storeData(userInput);
 
-        battery.notification();
+            display.show(ssd.getData());
+
+            battery.notification();
+
+            if (wifi.Checker() == false) {
+                std::cout << "Connecting..." << std::endl;
+                wifi.Connect();
+            }
+        }
+        else
+        {
+            std::cout << "Wrong password! Goodbye..." << std::endl;
+        }
+
+
+
+        
     }
 };

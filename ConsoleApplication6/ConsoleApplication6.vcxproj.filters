@@ -38,5 +38,11 @@
     <ClInclude Include="GPU.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="OS.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="WIFI.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

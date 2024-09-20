@@ -9,6 +9,6 @@ public:
 	}
 
 	void Success() {
-		std::cout << "OS has loaded! Welcome!" << std::endl;
+		std::cout << "OS has loaded!" << std::endl;
 	}
 };
