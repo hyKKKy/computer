@@ -32,7 +32,7 @@
     <ClInclude Include="SSD.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Monitor.h">
+    <ClInclude Include="Display.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="GPU.h">

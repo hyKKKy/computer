@@ -1,5 +1,5 @@
 #pragma once
-#include "Monitor.h"
+#include "Display.h"
 #include "SSD.h"
 #include "KeyBoard.h"
 #include "GPU.h"
